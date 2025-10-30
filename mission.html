@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Mission - SoulEcho</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                fontFamily: { 'sans': ['Inter', 'sans-serif'], },
+                extend: {
+                    colors: {
+                        'navy-dark': '#111827', 'navy-medium': '#1F2937', 'accent-blue': '#3B82F6',
+                        'accent-orange': '#F97316', 'text-light': '#D1D5DB', 'text-white': '#FFFFFF',
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-navy-dark text-text-light">
+
+    <!-- Header -->
+    <header id="main-header" class="fixed top-0 left-0 right-0 z-50 transition-all duration-300">
+        <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="index.html" class="flex items-center space-x-2">
+                <svg width="40" height="40" viewBox="0 0 256 256" xmlns="http://www.w3.org/2000/svg" fill="none"><path fill="#3B82F6" d="M128 24a104 104 0 1 0 104 104A104.12 104.12 0 0 0 128 24Zm0 192a88 88 0 1 1 88-88a88.1 88.1 0 0 1-88 88Z"/><path fill="#F97316" d="M168 128a40 40 0 1 1-40-40a40 40 0 0 1 40 40Z"/></svg>
+                <span class="text-2xl font-bold text-text-white">SoulEcho</span>
+            </a>
+            <div class="hidden md:flex space-x-8 font-semibold">
+                <a href="index.html" class="text-text-white nav-link">Home</a>
+                <a href="technology.html" class="text-text-white nav-link">Technology</a>
+                <a href="mission.html" class="text-accent-blue nav-link">Our Mission</a>
+                <a href="stories.html" class="text-text-white nav-link">Stories</a>
+                <a href="contact.html" class="text-text-white nav-link">Contact</a>
+            </div>
+            <button id="mobile-menu-button" class="md:hidden text-text-white z-50"><svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg></button>
+        </nav>
+        <div id="mobile-menu" class="fixed top-0 left-0 w-full h-screen bg-navy-dark flex-col items-center justify-center space-y-8 text-2xl font-semibold transform -translate-x-full transition-transform duration-300 ease-in-out md:hidden">
+            <a href="index.html" class="text-text-white block">Home</a><a href="technology.html" class="text-text-white block">Technology</a><a href="mission.html" class="text-accent-blue block">Our Mission</a><a href="stories.html" class="text-text-white block">Stories</a><a href="contact.html" class="text-text-white block">Contact</a>
+        </div>
+    </header>
+
+    <main>
+        <!-- Page Hero -->
+        <section class="pt-32 md:pt-40 pb-20 bg-navy-medium text-center scroll-fade-in">
+            <div class="container mx-auto px-6">
+                <h1 class="text-5xl md:text-7xl font-black text-text-white">Our Mission is to</h1>
+                <h1 class="text-5xl md:text-7xl font-black text-gradient-orange">Close The Gap</h1>
+                <p class="text-lg md:text-xl text-text-light mt-6 max-w-2xl mx-auto">We believe functionality is a human right, not a luxury. We're setting a new stage for a more inclusive future in prosthetic technology.</p>
+            </div>
+        </section>
+
+        <!-- Our "Why" -->
+        <section class="py-20 md:py-24 scroll-fade-in">
+            <div class="container mx-auto px-6 max-w-4xl">
+                <h2 class="text-4xl font-bold text-text-white mb-6 text-center">Our "Why"</h2>
+                <div class="prose prose-lg md:prose-xl prose-dark mx-auto text-text-light">
+                    <p>
+                        Prosthetic technology has the power to change lives, restoring functionality and independence. Yet, this promise remains unfulfilled for millions. The prohibitively high costs, often exceeding $50,000, combined with the complexity of surgical integration, make advanced prosthetics unreachable for the vast majority, especially in low-resource settings.
+                    </p>
+                    <p>
+                        We saw this problem firsthand in Bangladesh. We saw the gap between transformative technology and the people who needed it most.
+                    </p>
+                    <p>
+                        <strong>SoulEcho was born from a single question:</strong> Can we deliver an effective, affordable, and practical prosthetic solution without compromising on usability or performance? Our $500 AI-powered arm is the answer. We are not just building a product; we are building a more inclusive and accessible future.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Team Section -->
+        <section class="py-20 md:py-24 bg-navy-medium scroll-fade-in">
+            <div class="container mx-auto px-6">
+                <h2 class="text-4xl md:text-5xl font-bold text-text-white mb-12 md:mb-16 text-center">Meet the <span class="text-gradient-blue">Innovators</span></h2>
+                
+                <!-- Lead & Mentor -->
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12 max-w-4xl mx-auto mb-12">
+                    <div class="text-center">
+                        <img src="https://placehold.co/128x128/1F2937/D1D5DB?text=Washiun" alt="MD. Washiun Alim" class="w-32 h-32 rounded-full mx-auto mb-4 border-4 border-accent-blue shadow-lg">
+                        <h3 class="text-2xl font-bold text-text-white">MD. Washiun Alim</h3>
+                        <p class="text-lg text-accent-blue font-semibold">Team Lead</p>
+                    </div>
+                    <div class="text-center">
+                        <img src="https://placehold.co/128x128/1F2937/D1D5DB?text=Rudra" alt="Rudra Sarker" class="w-32 h-32 rounded-full mx-auto mb-4 border-4 border-accent-orange shadow-lg">
+                        <h3 class="text-2xl font-bold text-text-white">Rudra Sarker</h3>
+                        <p class="text-lg text-accent-orange font-semibold">Mentor</p>
+                    </div>
+                </div>
+
+                <!-- Members -->
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-8 md:gap-10 max-w-5xl mx-auto text-center">
+                    <div>
+                        <img src="https://placehold.co/128x128/1F2937/D1D5DB?text=Ruhit" alt="Ruhit Sarker" class="w-24 h-24 rounded-full mx-auto mb-3 border-2 border-gray-700">
+                        <h4 class="text-xl font-semibold text-text-white">Ruhit Sarker</h4>
+                        <p class="text-text-light">Member</p>
+                    </div>
+                    <div>
+                        <img src="https://placehold.co/128x128/1F2937/D1D5DB?text=Tufayel" alt="Tufayel Ahmed Suhag" class="w-24 h-24 rounded-full mx-auto mb-3 border-2 border-gray-700">
+                        <h4 class="text-xl font-semibold text-text-white">Tufayel Ahmed Suhag</h4>
+                        <p class="text-text-light">Member</p>
+                    </div>
+                    <div>
+                        <img src="https://placehold.co/128x128/1F2937/D1D5DB?text=Ishan" alt="Ishan Saha" class="w-24 h-24 rounded-full mx-auto mb-3 border-2 border-gray-700">
+                        <h4 class="text-xl font-semibold text-text-white">Ishan Saha</h4>
+                        <p class="text-text-light">Member</p>
+                    </div>
+                    <div>
+                        <img src="https://placehold.co/128x128/1F2937/D1D5DB?text=Sumit" alt="Sumit Sarker" class="w-24 h-24 rounded-full mx-auto mb-3 border-2 border-gray-700">
+                        <h4 class="text-xl font-semibold text-text-white">Sumit Sarker</h4>
+                        <p class="text-text-light">Member</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Partners Section -->
+        <section class="py-20 md:py-24 scroll-fade-in">
+            <div class="container mx-auto px-6 text-center">
+                <h2 class="text-4xl md:text-5xl font-bold text-text-white mb-12 md:mb-16">Our <span class="text-gradient-blue">Partners</span></h2>
+                <div class="max-w-md mx-auto bg-navy-medium p-8 rounded-xl shadow-lg border border-white/10">
+                    <img src="https://placehold.co/300x150/1F2937/D1D5DB?text=VARD+Logo" alt="VARD Logo" class="h-20 mx-auto mb-6 grayscale opacity-75">
+                    <h3 class="text-2xl font-bold text-text-white">Volunteer Association for Rural Development (VARD)</h3>
+                    <p class="text-text-light mt-4">
+                        In partnership with VARD, we provided Salman Ahmed with his prosthetic arm, customizing the design and fitting to his unique needs. This collaboration is key to our real-world testing and deployment.
+                    </p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="py-16 bg-navy-medium"><div class="container mx-auto px-6"><div class="grid md:grid-cols-3 gap-8"><div><a href="index.html" class="flex items-center space-x-2 mb-4"><svg width="32" height="32" viewBox="0 0 256 256" xmlns="http://www.w3.org/2000/svg" fill="none"><path fill="#3B82F6" d="M128 24a104 104 0 1 0 104 104A104.12 104.12 0 0 0 128 24Zm0 192a88 88 0 1 1 88-88a88.1 88.1 0 0 1-88 88Z"/><path fill="#F97316" d="M168 128a40 40 0 1 1-40-40a40 40 0 0 1 40 40Z"/></svg><span class="text-xl font-bold text-text-white">SoulEcho</span></a><p class="text-text-light pr-8">Intelligent prosthetics for everyone. Making advanced assistive technology affordable and accessible.</p></div><div><h4 class="text-lg font-semibold text-text-white mb-4">Navigation</h4><ul class="space-y-2"><li><a href="technology.html" class="text-text-light hover:text-accent-blue transition-colors">Technology</a></li><li><a href="mission.html" class="text-text-light hover:text-accent-blue transition-colors">Our Mission</a></li><li><a href="stories.html" class="text-text-light hover:text-accent-blue transition-colors">Patient Stories</a></li><li><a href="contact.html" class="text-text-light hover:text-accent-blue transition-colors">Contact</a></li></ul></div><div><h4 class="text-lg font-semibold text-text-white mb-4">Recognition</h4><p class="text-text-light">A project for the <strong>2025-2026 NASA Conrad Challenge</strong>.</p><p class="text-text-light mt-4">contact@soulecho.org</p></div></div><hr class="border-gray-700 my-8"><p class="text-center text-text-light">&copy; 2025 SoulEcho. All rights reserved.</p></div></footer>
+    
+    <script src="js/main.js"></script>
+</body>
+</html>
