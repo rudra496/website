@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Technology - SoulEcho</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                fontFamily: { 'sans': ['Inter', 'sans-serif'], },
+                extend: {
+                    colors: {
+                        'navy-dark': '#111827', 'navy-medium': '#1F2937', 'accent-blue': '#3B82F6',
+                        'accent-orange': '#F97316', 'text-light': '#D1D5DB', 'text-white': '#FFFFFF',
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-navy-dark text-text-light">
+
+    <!-- Header -->
+    <header id="main-header" class="fixed top-0 left-0 right-0 z-50 transition-all duration-300">
+        <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="index.html" class="flex items-center space-x-2">
+                <svg width="40" height="40" viewBox="0 0 256 256" xmlns="http://www.w3.org/2000/svg" fill="none"><path fill="#3B82F6" d="M128 24a104 104 0 1 0 104 104A104.12 104.12 0 0 0 128 24Zm0 192a88 88 0 1 1 88-88a88.1 88.1 0 0 1-88 88Z"/><path fill="#F97316" d="M168 128a40 40 0 1 1-40-40a40 40 0 0 1 40 40Z"/></svg>
+                <span class="text-2xl font-bold text-text-white">SoulEcho</span>
+            </a>
+            <div class="hidden md:flex space-x-8 font-semibold">
+                <a href="index.html" class="text-text-white nav-link">Home</a>
+                <a href="technology.html" class="text-accent-blue nav-link">Technology</a>
+                <a href="mission.html" class="text-text-white nav-link">Our Mission</a>
+                <a href="stories.html" class="text-text-white nav-link">Stories</a>
+                <a href="contact.html" class="text-text-white nav-link">Contact</a>
+            </div>
+            <button id="mobile-menu-button" class="md:hidden text-text-white z-50"><svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg></button>
+        </nav>
+        <div id="mobile-menu" class="fixed top-0 left-0 w-full h-screen bg-navy-dark flex-col items-center justify-center space-y-8 text-2xl font-semibold transform -translate-x-full transition-transform duration-300 ease-in-out md:hidden">
+            <a href="index.html" class="text-text-white block">Home</a><a href="technology.html" class="text-accent-blue block">Technology</a><a href="mission.html" class="text-text-white block">Our Mission</a><a href="stories.html" class="text-text-white block">Stories</a><a href="contact.html" class="text-text-white block">Contact</a>
+        </div>
+    </header>
+
+    <main>
+        <!-- Page Hero -->
+        <section class="pt-32 md:pt-40 pb-20 bg-navy-medium text-center scroll-fade-in">
+            <div class="container mx-auto px-6">
+                <h1 class="text-5xl md:text-7xl font-black text-text-white">The Science of</h1>
+                <h1 class="text-5xl md:text-7xl font-black text-gradient-blue">SoulEcho</h1>
+                <p class="text-lg md:text-xl text-text-light mt-6 max-w-2xl mx-auto">This is how we built a high-performance bionic arm for $500.</p>
+            </div>
+        </section>
+
+        <!-- Innovation 1: EMG + SMG -->
+        <section class="py-20 md:py-24 scroll-fade-in">
+            <div class="container mx-auto px-6 grid md:grid-cols-2 gap-12 items-center">
+                <div>
+                    <h2 class="text-3xl md:text-4xl font-bold text-text-white mb-4">1. Dual-Sensor Fusion</h2>
+                    <h3 class="text-2xl font-semibold text-gradient-blue mb-6">EMG + SMG = Unmatched Control</h3>
+                    <p class="text-lg text-text-light mb-4">
+                        Traditional prosthetics often rely only on Electromyography (EMG), which detects electrical signals from muscles. This is effective, but can be disrupted by sweat, skin impedance, or electrode displacement.
+                    </p>
+                    <p class="text-lg text-text-light">
+                        Our innovation is fusing EMG with **Sonomyography (SMG)**, an ultrasound technology that measures the *mechanical deformation* (shape, thickness) of the muscle as it contracts. By combining the rapid *temporal* data of EMG with the reliable *spatial* data of SMG, we achieve superior pattern recognition and filter out false activations.
+                    </p>
+                </div>
+                <div class="bg-navy-medium p-6 rounded-xl shadow-lg border border-white/10">
+                    <img src="https://placehold.co/600x400/1F2937/3B82F6?text=Diagram:+EMG+(Signal)+vs+SMG+(Shape)" alt="EMG vs SMG Diagram" class="rounded-lg w-full">
+                </div>
+            </div>
+        </section>
+
+        <!-- Innovation 2: Spring Mechanism -->
+        <section class="py-20 md:py-24 bg-navy-medium scroll-fade-in">
+            <div class="container mx-auto px-6 grid md:grid-cols-2 gap-12 items-center">
+                <div class="md:order-2">
+                    <h2 class="text-3xl md:text-4xl font-bold text-text-white mb-4">2. The 89.7% Power-Save</h2>
+                    <h3 class="text-2xl font-semibold text-gradient-orange mb-6">The Revolutionary Spring-Assisted Grip</h3>
+                    <p class="text-lg text-text-light mb-4">
+                        A major user complaint about existing prosthetics is battery life. Traditional designs consume power *continuously* to hold a grip.
+                    </p>
+                    <p class="text-lg text-text-light">
+                        Our novel mechanism provides gripping force through a **spring**. The motor is only activated for a few seconds to *open* the hand against the spring. This simple change reduces total energy consumption by approximately **89.7%** during common tasks, allowing for multi-day battery life.
+                    </p>
+                    <pre class="bg-navy-dark p-4 rounded-lg text-text-light mt-4 text-sm overflow-x-auto">
+E_traditional = (P_max * 2s) + (0.3 * P_max * 58s) = 19.4 P_max
+E_proposed    = (P_max * 2s)                        =  2.0 P_max
+
+Reduction = (17.4 / 19.4) * 100 = 89.7%
+                    </pre>
+                </div>
+                <div class="bg-navy-medium p-6 rounded-xl shadow-lg border border-white/10 md:order-1">
+                    <img src="https://placehold.co/600x400/1F2937/F97316?text=Diagram:+Spring+Mechanism+vs+Motor+Grip" alt="Spring Mechanism Diagram" class="rounded-lg w-full">
+                </div>
+            </div>
+        </section>
+
+        <!-- Innovation 3: Haptics & Sensors -->
+        <section class="py-20 md:py-24 scroll-fade-in">
+            <div class="container mx-auto px-6 grid md:grid-cols-2 gap-12 items-center">
+                <div>
+                    <h2 class="text-3xl md:text-4xl font-bold text-text-white mb-4">3. Feel & Affordability</h2>
+                    <h3 class="text-2xl font-semibold text-gradient-blue mb-6">Haptic Feedback and Smart Sensor Choice</h3>
+                    <p class="text-lg text-text-light mb-4">
+                        To make the arm feel like a natural extension, we integrated small **vibration motors**. As the user tightens their grip, the motors vibrate, simulating the sensation of pressure and touch. Patients in our trials reported this was a key feature for improving control and convenience.
+                    </p>
+                    <p class="text-lg text-text-light">
+                        To meet our $500 price point, we analyzed 353 user reviews for 9 different sensors. We selected the **MyoWare Muscle Sensor V3** for its perfect balance of cost-effectiveness ($25), technical efficiency, and user-friendly built-in electrodes.
+                    </p>
+                </div>
+                <div class="bg-navy-medium p-6 rounded-xl shadow-lg border border-white/10">
+                    <img src="https://placehold.co/600x400/1F2937/D1D5DB?text=MyoWare+V3+Sensor+Close-up" alt="MyoWare Sensor" class="rounded-lg w-full">
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="py-16 bg-navy-medium"><div class="container mx-auto px-6"><div class="grid md:grid-cols-3 gap-8"><div><a href="index.html" class="flex items-center space-x-2 mb-4"><svg width="32" height="32" viewBox="0 0 256 256" xmlns="http://www.w3.org/2000/svg" fill="none"><path fill="#3B82F6" d="M128 24a104 104 0 1 0 104 104A104.12 104.12 0 0 0 128 24Zm0 192a88 88 0 1 1 88-88a88.1 88.1 0 0 1-88 88Z"/><path fill="#F97316" d="M168 128a40 40 0 1 1-40-40a40 40 0 0 1 40 40Z"/></svg><span class="text-xl font-bold text-text-white">SoulEcho</span></a><p class="text-text-light pr-8">Intelligent prosthetics for everyone. Making advanced assistive technology affordable and accessible.</p></div><div><h4 class="text-lg font-semibold text-text-white mb-4">Navigation</h4><ul class="space-y-2"><li><a href="technology.html" class="text-text-light hover:text-accent-blue transition-colors">Technology</a></li><li><a href="mission.html" class="text-text-light hover:text-accent-blue transition-colors">Our Mission</a></li><li><a href="stories.html" class="text-text-light hover:text-accent-blue transition-colors">Patient Stories</a></li><li><a href="contact.html" class="text-text-light hover:text-accent-blue transition-colors">Contact</a></li></ul></div><div><h4 class="text-lg font-semibold text-text-white mb-4">Recognition</h4><p class="text-text-light">A project for the <strong>2025-2026 NASA Conrad Challenge</strong>.</p><p class="text-text-light mt-4">contact@soulecho.org</p></div></div><hr class="border-gray-700 my-8"><p class="text-center text-text-light">&copy; 2025 SoulEcho. All rights reserved.</p></div></footer>
+    
+    <script src="js/main.js"></script>
+</body>
+</html>
