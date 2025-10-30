@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Patient Stories - SoulEcho</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                fontFamily: { 'sans': ['Inter', 'sans-serif'], },
+                extend: {
+                    colors: {
+                        'navy-dark': '#111827', 'navy-medium': '#1F2937', 'accent-blue': '#3B82F6',
+                        'accent-orange': '#F97316', 'text-light': '#D1D5DB', 'text-white': '#FFFFFF',
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-navy-dark text-text-light">
+
+    <!-- Header -->
+    <header id="main-header" class="fixed top-0 left-0 right-0 z-50 transition-all duration-300">
+        <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="index.html" class="flex items-center space-x-2">
+                <svg width="40" height="40" viewBox="0 0 256 256" xmlns="http://www.w3.org/2000/svg" fill="none"><path fill="#3B82F6" d="M128 24a104 104 0 1 0 104 104A104.12 104.12 0 0 0 128 24Zm0 192a88 88 0 1 1 88-88a88.1 88.1 0 0 1-88 88Z"/><path fill="#F97316" d="M168 128a40 40 0 1 1-40-40a40 40 0 0 1 40 40Z"/></svg>
+                <span class="text-2xl font-bold text-text-white">SoulEcho</span>
+            </a>
+            <div class="hidden md:flex space-x-8 font-semibold">
+                <a href="index.html" class="text-text-white nav-link">Home</a>
+                <a href="technology.html" class="text-text-white nav-link">Technology</a>
+                <a href="mission.html" class="text-text-white nav-link">Our Mission</a>
+                <a href="stories.html" class="text-accent-blue nav-link">Stories</a>
+                <a href="contact.html" class="text-text-white nav-link">Contact</a>
+            </div>
+            <button id="mobile-menu-button" class="md:hidden text-text-white z-50"><svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg></button>
+        </nav>
+        <div id="mobile-menu" class="fixed top-0 left-0 w-full h-screen bg-navy-dark flex-col items-center justify-center space-y-8 text-2xl font-semibold transform -translate-x-full transition-transform duration-300 ease-in-out md:hidden">
+            <a href="index.html" class="text-text-white block">Home</a><a href="technology.html" class="text-text-white block">Technology</a><a href="mission.html" class="text-text-white block">Our Mission</a><a href="stories.html" class="text-accent-blue block">Stories</a><a href="contact.html" class="text-text-white block">Contact</a>
+        </div>
+    </header>
+
+    <main>
+        <!-- Page Hero -->
+        <section class="pt-32 md:pt-40 pb-20 bg-navy-medium text-center scroll-fade-in">
+            <div class="container mx-auto px-6">
+                <h1 class="text-5xl md:text-7xl font-black text-text-white">Real Lives,</h1>
+                <h1 class="text-5xl md:text-7xl font-black text-gradient-orange">Real Impact</h1>
+                <p class="text-lg md:text-xl text-text-light mt-6 max-w-2xl mx-auto">Our 95% positive response rate comes from real patient trials and feedback.</p>
+            </div>
+        </section>
+
+        <!-- Patient Stories Grid -->
+        <section class="py-20 md:py-24">
+            <div class="container mx-auto px-6 space-y-16 md:space-y-24">
+
+                <!-- Story 1: Salman Ahmed -->
+                <div class="grid md:grid-cols-2 gap-8 md:gap-12 items-center scroll-fade-in">
+                    <img src="https://placehold.co/600x400/1F2937/D1D5DB?text=Salman+Ahmed" alt="Salman Ahmed" class="rounded-xl shadow-lg w-full">
+                    <div class="prose prose-lg md:prose-xl prose-dark mx-auto text-text-light">
+                        <h2 class="text-text-white">Salman Ahmed, 17</h2>
+                        <p class="text-xl text-accent-blue font-semibold -mt-4">Student, Bangladesh</p>
+                        <p>
+                            Salman, a young student, showed incredible adaptability from childhood. In partnership with VARD, we provided him with a customized SoulEcho arm.
+                        </p>
+                        <blockquote class="text-accent-blue">
+                            "It has improved my quality of life. I am now able to perform tasks that were previously challenging... it has improved my practical abilities and boosted my confidence."
+                        </blockquote>
+                    </div>
+                </div>
+
+                <!-- Story 2: Halima Khatun -->
+                <div class="grid md:grid-cols-2 gap-8 md:gap-12 items-center scroll-fade-in">
+                    <div class="md:order-2">
+                        <img src="https://placehold.co/600x400/1F2937/D1D5DB?text=Halima+Khatun" alt="Halima Khatun" class="rounded-xl shadow-lg w-full">
+                    </div>
+                    <div class="prose prose-lg md:prose-xl prose-dark mx-auto text-text-light md:order-1">
+                        <h2 class="text-text-white">Halima Khatun, 32</h2>
+                        <p class="text-xl text-accent-blue font-semibold -mt-4">Factory Worker, Dhaka</p>
+                        <p>
+                            Halima received a massive injury when her right hand was caught in a machine at her factory, leading to amputation at the wrist.
+                        </p>
+                        <p>
+                            As a relative of one of our team members, our response team immediately designed a customized prosthetic arm to support her wrist and help her regain independence.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Story 3: Abu Talha -->
+                <div class="grid md:grid-cols-2 gap-8 md:gap-12 items-center scroll-fade-in">
+                    <img src="https://placehold.co/600x400/1F2937/D1D5DB?text=Abu+Talha" alt="Abu Talha" class="rounded-xl shadow-lg w-full">
+                    <div class="prose prose-lg md:prose-xl prose-dark mx-auto text-text-light">
+                        <h2 class="text-text-white">Abu Talha, 25</h2>
+                        <p class="text-xl text-accent-blue font-semibold -mt-4">Former Laborer, Bangladesh</p>
+                        <p>
+                            Abu lost his arm in a chainsaw accident. He was one of our early testers, and his feedback was crucial.
+                        </p>
+                        <p>
+                            In the primary phase, he reported that the "fabrical pads" were uncomfortable, created itching, and caused signal glitches. This direct feedback led us to upgrade to modern electropads, which solved the issues and earned his positive response.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Story 4: Rahim Uddin -->
+                <div class="grid md:grid-cols-2 gap-8 md:gap-12 items-center scroll-fade-in">
+                    <div class="md:order-2">
+                        <img src="https://placehold.co/600x400/1F2937/D1D5DB?text=Rahim+Uddin" alt="Rahim Uddin" class="rounded-xl shadow-lg w-full">
+                    </div>
+                    <div class="prose prose-lg md:prose-xl prose-dark mx-auto text-text-light md:order-1">
+                        <h2 class="text-text-white">Rahim Uddin, 41</h2>
+                        <p class="text-xl text-accent-blue font-semibold -mt-4">Construction Worker, Sylhet</p>
+                        <p>
+                            Rahim sustained a severe crushing injury from a falling steel beam at a construction site, leading to extensive muscle and nerve damage.
+                        </p>
+                        <p>
+                            Despite multiple surgical attempts, necrosis and infection required a surgical amputation below the elbow. He was fitted with a SoulEcho arm to help restore function.
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="py-16 bg-navy-medium"><div class="container mx-auto px-6"><div class="grid md:grid-cols-3 gap-8"><div><a href="index.html" class="flex items-center space-x-2 mb-4"><svg width="32" height="32" viewBox="0 0 256 256" xmlns="http://www.w3.org/2000/svg" fill="none"><path fill="#3B82F6" d="M128 24a104 104 0 1 0 104 104A104.12 104.12 0 0 0 128 24Zm0 192a88 88 0 1 1 88-88a88.1 88.1 0 0 1-88 88Z"/><path fill="#F97316" d="M168 128a40 40 0 1 1-40-40a40 40 0 0 1 40 40Z"/></svg><span class="text-xl font-bold text-text-white">SoulEcho</span></a><p class="text-text-light pr-8">Intelligent prosthetics for everyone. Making advanced assistive technology affordable and accessible.</p></div><div><h4 class="text-lg font-semibold text-text-white mb-4">Navigation</h4><ul class="space-y-2"><li><a href="technology.html" class="text-text-light hover:text-accent-blue transition-colors">Technology</a></li><li><a href="mission.html" class="text-text-light hover:text-accent-blue transition-colors">Our Mission</a></li><li><a href="stories.html" class="text-text-light hover:text-accent-blue transition-colors">Patient Stories</a></li><li><a href="contact.html" class="text-text-light hover:text-accent-blue transition-colors">Contact</a></li></ul></div><div><h4 class="text-lg font-semibold text-text-white mb-4">Recognition</h4><p class="text-text-light">A project for the <strong>2025-2026 NASA Conrad Challenge</strong>.</p><p class="text-text-light mt-4">contact@soulecho.org</p></div></div><hr class="border-gray-700 my-8"><p class="text-center text-text-light">&copy; 2025 SoulEcho. All rights reserved.</p></div></footer>
+    
+    <script src="js/main.js"></script>
+</body>
+</html>
