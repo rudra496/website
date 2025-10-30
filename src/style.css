@@ -1,0 +1,139 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* style.css
+    This file contains all custom styles and animations.
+*/
+
+/* 1. Global Font Setup */
+body {
+    font-family: 'Inter', sans-serif;
+}
+
+/* 2. Header Glassmorphism Effect */
+#main-header {
+    background-color: rgba(17, 24, 39, 0.8); /* bg-navy-dark/80 */
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* 3. Hero 3D Canvas */
+#hero-canvas {
+    z-index: 0;
+    opacity: 0.6;
+    background: linear-gradient(180deg, rgba(17, 24, 39, 0) 0%, #111827 100%);
+}
+
+/* 4. Navigation Link Hover */
+.nav-link {
+    position: relative;
+    transition: color 0.3s;
+}
+.nav-link::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: -6px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #3B82F6; /* accent-blue */
+    transition: width 0.3s;
+}
+.nav-link:hover::after,
+.nav-link.text-accent-blue::after {
+    width: 100%;
+}
+
+/* 5. Custom Button Styles */
+.btn-primary {
+    @apply py-3 px-8 bg-accent-blue text-text-white font-bold rounded-lg shadow-lg transition-all duration-300;
+    @apply hover:bg-blue-500 hover:shadow-xl hover:shadow-blue-500/30 transform hover:-translate-y-1;
+}
+.btn-secondary {
+    @apply py-3 px-8 bg-navy-medium text-text-light font-bold rounded-lg shadow-lg transition-all duration-300;
+    @apply border border-gray-700 hover:border-accent-blue hover:text-text-white transform hover:-translate-y-1;
+}
+.btn-primary-inverted {
+    @apply py-3 px-8 bg-text-white text-navy-dark font-bold rounded-lg shadow-lg transition-all duration-300;
+    @apply hover:bg-text-light hover:shadow-xl hover:shadow-white/30 transform hover:-translate-y-1;
+}
+
+/* 6. Gradient Text */
+.text-gradient-blue {
+    @apply bg-gradient-to-r from-accent-blue to-blue-400 bg-clip-text text-transparent;
+}
+.text-gradient-orange {
+    @apply bg-gradient-to-r from-accent-orange to-orange-400 bg-clip-text text-transparent;
+}
+
+/* 7. Horizontal Scroll Snap */
+.snap-x {
+    scroll-snap-type: x mandatory;
+}
+.snap-center {
+    scroll-snap-align: center;
+}
+/* Hide scrollbar for a cleaner look */
+.horizontal-scrollbar-fix {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+}
+.horizontal-scrollbar-fix::-webkit-scrollbar {
+    display: none; /* Chrome, Safari, Opera */
+}
+
+
+/* 8. Scroll-Fade-In Animation */
+.scroll-fade-in {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+.scroll-fade-in-visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* 9. Prose Customization (for text pages) */
+.prose-dark {
+    color: #D1D5DB; /* text-light */
+}
+.prose-dark h1, .prose-dark h2, .prose-dark h3, .prose-dark h4, .prose-dark strong {
+    color: #FFFFFF; /* text-white */
+}
+.prose-dark blockquote {
+    color: #3B82F6; /* accent-blue */
+    border-left-color: #3B82F6;
+    font-weight: 500;
+}
+.prose-dark a {
+    color: #3B82F6;
+    transition: color 0.3s;
+    font-weight: 600;
+}
+.prose-dark a:hover {
+    color: #F97316; /* accent-orange */
+}
+.prose-dark ul > li::before {
+    background-color: #3B82F6; /* accent-blue */
+}
+
+
+/* 10. Form Input Styling */
+.form-input {
+    @apply mt-1 block w-full bg-navy-dark border-gray-700 rounded-md shadow-sm text-text-light focus:ring-accent-blue focus:border-accent-blue p-3;
+    @apply transition-colors duration-200;
+}
+.form-input:focus {
+     --tw-ring-color: #3B82F6;
+    border-color: #3B82F6;
+}
+
+/* 11. Card Hover Effect */
+.card-hover-glow {
+    @apply bg-navy-dark p-6 md:p-8 rounded-xl shadow-lg border border-white/10;
+    @apply transform hover:scale-105 hover:border-accent-blue transition-all duration-300;
+}
